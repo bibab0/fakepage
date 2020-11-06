@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://uploads.dahe.cn/huhanze/zt/2017/ljhn/images/style.css"/>
+    <link rel="stylesheet" href="./fakePage.css">
+    <title>fakePage</title>
+</head>
+
+<body>
+    <div class="newsList clearfix">
+            <ul id="newsList" class="clearfix">
+                <li>
+                    <div class="photo">
+                        <a href="http://sc.china.com.cn/2017/visionksc_0216/215578.html" target="_blank"><img src="http://sc.china.com.cn/uploadfile/2017/0216/20170216033838626.png" alt="百部看四川：过年还是腊肉香" width="230" height="150"></a>
+                    </div>
+                    <div class="name">
+                        <h1>百部看四川：过年还是腊肉香</h1>
+                    </div>
+                </li>
+            </ul>
+            <div id="pageArea">
+                    <div id="pageDec"></div>
+                    <div id="pageSelect">
+                        <span id="pageCount" class="fl"></span>
+                        <label style="display:none;" for="pageJump">转到第</label>
+                        <input  style="display:none;" id="pageJump" name="pageJump" type="text" value="">
+                        <span  style="display:none;">页</span>
+                        <input  style="display:none;" type="button" class="btn2" onclick="goto()" value="跳转">
+                    </div>
+                </div>
+        </div>
+
+    <script src="./fakePage.js"></script>
+    <script>
+        window.onload = function() {
+            fakePage(1); // 参数为每页需要显示的条数。
+        }
+    </script>
+</body>
+
+</html>
